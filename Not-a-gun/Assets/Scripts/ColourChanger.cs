@@ -10,7 +10,7 @@ public class ColourChanger : MonoBehaviour {
    // Use this for initialization
    void Start () {
       currentState = State.GetComponent<ComboSwitch>().State();
-
+      GetComponent<Renderer>().material = currentState ? materialOn : materialOff;
    }
 	
 	// Update is called once per frame
