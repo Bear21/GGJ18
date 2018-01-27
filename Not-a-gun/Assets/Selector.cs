@@ -6,6 +6,7 @@ public class Selector : MonoBehaviour {
    private Camera cam;
    public Transform storagePoint;
    private GameObject storage = null;
+   private Collider[] disabledColliders;
    // Use this for initialization
    void Start () {
       cam = GetComponent<Camera>();
@@ -54,7 +55,7 @@ public class Selector : MonoBehaviour {
       {
          collider.enabled = false;
       }
-
+      disabledColliders = results;
       obj.transform.SetParent(storagePoint);
       storage = obj;
    }
