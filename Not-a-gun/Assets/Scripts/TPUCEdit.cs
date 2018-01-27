@@ -5,7 +5,7 @@ using UnityStandardAssets.CrossPlatformInput;
 namespace UnityStandardAssets.Characters.ThirdPerson
 {
     [RequireComponent(typeof (ThirdPersonCharacter))]
-    public class ThirdPersonUserControl : MonoBehaviour
+    public class TPUCEdit : MonoBehaviour
     {
         private ThirdPersonCharacter m_Character; // A reference to the ThirdPersonCharacter on the object
         private Transform m_Cam;                  // A reference to the main camera in the scenes transform
